@@ -4,7 +4,7 @@ function MyFooter() {
   return (
     <div className="bg-primary">
       <div className="div-left">
-        <span>My App &copy; 2021</span>
+        <span>Gift Cards &copy; 2023</span>
       </div>
       <div className="footer-right">
         <span>Made with ❤️ by Me</span>

@@ -1,6 +1,12 @@
 import React from "react";
+import { ConnectKitButton } from "connectkit";
+import { useAccount } from "wagmi";
+
+// import NetworkButton from "connectkit/build/components/NetworkButton";
 
 function Navbar() {
+  const { address, isConnected, isDisconnected } = useAccount();
+
   return (
     <div className="navbar bg-base-100 rounded-xl mt-2 shadow-lg ">
       <div className="navbar-start">
@@ -70,7 +76,8 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        {/* {isConnected && <NetworkButton />} */}
+        <ConnectKitButton />
       </div>
     </div>
   );
